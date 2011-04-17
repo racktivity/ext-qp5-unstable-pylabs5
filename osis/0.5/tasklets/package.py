@@ -27,6 +27,6 @@ def main(q, i, params, tags):
     egg_name = q.system.fs.joinPaths(egg_dir, egg_zip_name)
     q.qpackagetools.createEggZipFromSandboxDir(q.system.fs.joinPaths(base_site_packages, qpackage.name), egg_name)
 
-    relativePath = q.system.fs.joinPaths('lib', 'pymonkey', 'extensions', 'osis_connection')
+    relativePath = q.system.fs.joinPaths('lib', 'pylabs', 'extensions', 'osis_connection')
     q.system.fs.copyDirTree(q.system.fs.joinPaths(q.dirs.varDir, 'src', relativePath), q.system.fs.joinPaths(generic_upload_dir, relativePath))
 

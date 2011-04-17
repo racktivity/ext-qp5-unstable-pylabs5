@@ -11,12 +11,12 @@ def main(q, i, params, tags):
     
     # Repo info
     repository = 'https://bitbucket.org/despiegk/pymodel'
-    branch     = 'default' # 'v%s' % version
+    branch     = 'pylabs5' # 'v%s' % version
     
     # Map repo to sandbox
     paths = (
         (q.system.fs.joinPaths('', 'pymodel'), q.system.fs.joinPaths('', 'lib', 'python', 'site-packages', 'pymodel')), 
-        (q.system.fs.joinPaths('', 'pymodel_extension'), q.system.fs.joinPaths('', 'lib', 'pymonkey', 'extensions', 'pymodel_extension')),
+        (q.system.fs.joinPaths('', 'pymodel_extension'), q.system.fs.joinPaths('', 'lib', 'pylabs', 'extensions', 'pymodel_extension')),
     )
 
     # Setup recipe

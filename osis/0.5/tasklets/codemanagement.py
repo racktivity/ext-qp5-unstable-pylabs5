@@ -15,7 +15,7 @@ def main(q, i, params, tags):
     connection = i.config.clients.mercurial.findByUrl(repository[0])
     recipe.addRepository(connection)
     recipe.addSource(connection, q.system.fs.joinPaths('code','osis'), q.system.fs.joinPaths('var', 'src', 'lib', 'python', 'site-packages','osis'),branch=branch[0])
-    recipe.addSource(connection, q.system.fs.joinPaths('osis_connection_config'), q.system.fs.joinPaths('var', 'src', 'lib', 'pymonkey', 'extensions', 'osis_connection'),branch=branch[0])
+    recipe.addSource(connection, q.system.fs.joinPaths('osis_connection_config'), q.system.fs.joinPaths('var', 'src', 'lib', 'pylabs', 'extensions', 'osis_connection'),branch=branch[0])
 
     if params['action'] == 'getSource':
         params['action'] = 'export'
