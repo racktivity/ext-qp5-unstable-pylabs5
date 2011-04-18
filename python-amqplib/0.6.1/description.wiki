@@ -1,3 +1,0 @@
-h2. pylabs5 python-amqplib 0.6.1
-
-...

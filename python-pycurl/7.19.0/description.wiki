@@ -1,3 +1,0 @@
-h2. pylabs5 python-pycurl 7.19.0
-
-...

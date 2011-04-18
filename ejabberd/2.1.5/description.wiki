@@ -1,3 +1,0 @@
-h2. pylabs5 ejabberd 2.1.5
-
-...
