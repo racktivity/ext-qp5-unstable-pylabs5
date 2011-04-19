@@ -12,4 +12,3 @@ def main(q, i, params, tags):
     if q.system.fs.exists(py2_6): q.system.fs.removeDirTree(py2_6)
 
     qpackage.copyFiles()
-    qpackage.signalConfigurationNeeded()
