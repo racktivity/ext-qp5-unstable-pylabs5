@@ -17,7 +17,7 @@ def main(q, i, params, tags):
     q.system.fs.createDir(osisdir)
 
     recipe.addSource(connection, 'model/views/', q.system.fs.joinPaths(filesexportDir, 'views'))
-    recipe.addSource(connection, 'htdocs/', q.system.fs.joinPaths(filesexportDir, 'www'))
+    recipe.addSource(connection, 'htdocs/', q.system.fs.joinPaths(filesexportDir, 'www', 'lfw'))
     recipe.addSource(connection, 'services/lfw', q.system.fs.joinPaths(filesexportDir, 'lib', 'python', 'site-packages'))
     recipe.addSource(connection, 'scripts/', q.system.fs.joinPaths(filesexportDir, 'scripts'))
     recipe.addSource(connection, 'docs/', q.system.fs.joinPaths(filesexportDir, 'docs'))
