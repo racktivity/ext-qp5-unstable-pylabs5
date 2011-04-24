@@ -14,8 +14,6 @@ def main(q, i, params, tags):
     recipe.addRepository(connection)
     recipe.addSource(connection, 'model/rootobjects/', osisdir)
 
-    q.system.fs.createDir(osisdir)
-
     recipe.addSource(connection, 'model/views/', q.system.fs.joinPaths(filesexportDir, 'views'))
     recipe.addSource(connection, 'htdocs/', q.system.fs.joinPaths(filesexportDir, 'www', 'lfw'))
     recipe.addSource(connection, 'services/lfw', q.system.fs.joinPaths(filesexportDir, 'lib', 'python', 'site-packages'))
