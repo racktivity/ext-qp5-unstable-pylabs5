@@ -3,4 +3,4 @@ __tags__   = 'install',
 
 def main(q, i, params, tags):
     qpackage = params['qpackage']
-    q.qpackagetools.copyFiles(qpackage)
+    qpackage.copyFiles()
