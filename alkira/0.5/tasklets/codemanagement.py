@@ -14,10 +14,10 @@ def main(q, i, params, tags):
     recipe.addRepository(connection)
     recipe.addSource(connection, 'model/rootobjects/', osisdir)
 
-    recipe.addSource(connection, 'model/views/', q.system.fs.joinPaths(filesexportDir, 'views'))
+    #recipe.addSource(connection, 'model/views/', q.system.fs.joinPaths(filesexportDir, 'views'))
     recipe.addSource(connection, 'htdocs/', q.system.fs.joinPaths(filesexportDir, 'www', 'lfw'))
     recipe.addSource(connection, 'services/lfw', q.system.fs.joinPaths(filesexportDir, 'lib', 'python', 'site-packages', 'alkira'))
-    recipe.addSource(connection, 'docs/', q.system.fs.joinPaths(filesexportDir, 'docs'))
+    #recipe.addSource(connection, 'docs/', q.system.fs.joinPaths(filesexportDir, 'docs'))
     tmpdir = q.system.fs.joinPaths(filesexportDir, 'tmp')
     recipe.addSource(connection, 'model/tasklets/', tmpdir)
     osis_service_dir = q.system.fs.joinPaths(filesexportDir, 'apps', 'applicationserver', 'services', 'osis_service', 'tasklets')
@@ -25,3 +25,4 @@ def main(q, i, params, tags):
     recipe.executeTaskletAction(params["action"])
 
     q.system.fs.copyDirTree(tmpdir, osis_service_dir)
+    q.system.fs.removeDirTree(tmpdir)
