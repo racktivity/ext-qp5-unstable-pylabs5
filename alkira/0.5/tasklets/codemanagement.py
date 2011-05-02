@@ -17,6 +17,7 @@ def main(q, i, params, tags):
     #recipe.addSource(connection, 'model/views/', q.system.fs.joinPaths(filesexportDir, 'views'))
     recipe.addSource(connection, 'htdocs/', q.system.fs.joinPaths(filesexportDir, 'www', 'lfw'))
     recipe.addSource(connection, 'services/lfw', q.system.fs.joinPaths(filesexportDir, 'lib', 'python', 'site-packages', 'alkira'))
+    recipe.addSource(connection, 'client', q.system.fs.joinPaths(filesexportDir, 'lib', 'pylabs', 'extensions', 'clients', 'alkira'))
     #recipe.addSource(connection, 'docs/', q.system.fs.joinPaths(filesexportDir, 'docs'))
     tmpdir = q.system.fs.joinPaths(filesexportDir, 'tmp')
     recipe.addSource(connection, 'model/tasklets/', tmpdir)
