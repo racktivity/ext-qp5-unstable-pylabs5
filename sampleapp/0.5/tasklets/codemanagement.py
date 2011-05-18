@@ -15,7 +15,6 @@ def main(q, i, params, tags):
     from clients.mercurial.HgRecipe import HgRecipe
     recipe = HgRecipe()
     connection = i.config.clients.mercurial.findByUrl(repository)
-
     filesexportDir = q.system.fs.joinPaths(q.dirs.varDir, 'src', qpackage.name, 'files')
 
     if q.system.fs.exists(filesexportDir):
@@ -28,6 +27,7 @@ def main(q, i, params, tags):
     recipe.addRepository(connection)
     recipe.addSource(connection, q.system.fs.joinPaths('docs', 'alkiradocs'), q.system.fs.joinPaths(filesexportDir, 'pyapps', 'sampleapp', 'portal', 'spaces', 'alkiradocs'))
     recipe.addSource(connection, q.system.fs.joinPaths('docs', 'md_images'), q.system.fs.joinPaths(filesexportDir, 'pyapps', 'sampleapp', 'portal', 'static', 'images', 'alkira'))
+    recipe.addSource(connection, 'pylabsmacro', q.system.fs.joinPaths(filesexportDir, 'pyapps', 'sampleapp', 'impl', 'portal', 'pylabsmacro'))
 
     recipe.executeTaskletAction(params['action'])
 
