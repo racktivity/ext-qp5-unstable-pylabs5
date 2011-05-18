@@ -26,6 +26,7 @@ def main(q, i, params, tags):
     connection =  i.config.clients.mercurial.findByUrl("http://bitbucket.org/despiegk/lfw")
     recipe.addRepository(connection)
     recipe.addSource(connection, q.system.fs.joinPaths('docs', 'alkiradocs'), q.system.fs.joinPaths(filesexportDir, 'pyapps', 'sampleapp', 'portal', 'spaces', 'alkiradocs'))
+    recipe.addSource(connection, q.system.fs.joinPaths('htdocs', 'js', 'macros'), q.system.fs.joinPaths(filesexportDir, 'pyapps', 'sampleapp', 'impl', 'portal', 'jsmacros'))
     recipe.addSource(connection, q.system.fs.joinPaths('docs', 'md_images'), q.system.fs.joinPaths(filesexportDir, 'pyapps', 'sampleapp', 'portal', 'static', 'images', 'alkira'))
     recipe.addSource(connection, 'pylabsmacro', q.system.fs.joinPaths(filesexportDir, 'pyapps', 'sampleapp', 'impl', 'portal', 'pylabsmacro'))
 
