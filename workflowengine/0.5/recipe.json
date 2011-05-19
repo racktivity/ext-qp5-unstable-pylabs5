@@ -1,0 +1,12 @@
+[ 
+  { "branch" : "pylabs5",
+     "location" : "http://bitbucket.org/despiegk/pylabs_workflowengine",
+     "mapping" : 
+     {  "workflowengine/lib" : "linux/lib/python/site-packages/workflowengine",
+        "workflowengine/manage" : "linux/lib/pylabs/extensions/workflowengine/manage",
+        "workflowengine/bin" : "linux/apps/workflowengine/bin",
+        "workflowengine/debug_service" : "linux/apps/applicationserver/services/wfe_debug"
+     
+     }
+  }
+]
