@@ -1,0 +1,9 @@
+[ 
+  { "branch" : "coffee",
+    "location" : "http://bitbucket.org/despiegk/jswizards",
+    "mapping" : 
+    {  
+      "" : "generic/www/jswizards"
+    }
+  }
+]
