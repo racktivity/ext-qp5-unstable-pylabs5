@@ -1,0 +1,18 @@
+[ 
+  {  "branch" : "default",
+     "location" : "https://bitbucket.org/incubaid/pylabs-core/",
+     "mapping" : 
+     {  "pyapps/sampleapp" : "generic/pyapps/sampleapp"
+     }
+  },
+  { "branch" : "default",
+     "location" : "http://bitbucket.org/despiegk/lfw",
+     "mapping" : 
+     {  "docs/alkiradocs" : "generic/pyapps/sampleapp/portal/spaces/alkiradocs",
+        "htdocs/js/macros" : "generic/pyapps/sampleapp/impl/portal/jsmacros",
+        "docs/md_images" : "generic/pyapps/sampleapp/portal/static/images/alkira",
+        "pylabsmacro" : "generic/pyapps/sampleapp/impl/portal/pylabsmacro"
+     }
+  }
+]
+
