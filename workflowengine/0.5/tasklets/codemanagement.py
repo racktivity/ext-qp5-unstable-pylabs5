@@ -7,4 +7,4 @@ def match(q, i, params, tags):
 
 def main(q, i, params, tags):
     qpackage = params['qpackage']
-    qpackage.checkoutFromRecipe()
+    qpackage.checkoutRecipe()
