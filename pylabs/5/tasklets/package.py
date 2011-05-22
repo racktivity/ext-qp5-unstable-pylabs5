@@ -4,9 +4,8 @@ __tags__ = 'package',
 
 def main(q, i, params, tags):
     qpackage = params["qpackage"]
-    filesDir = qpackage.getPathFiles()
-    q.system.fs.removeDirTree(filesDir)
-    q.system.fs.createDir(filesDir)
-    q.system.fs.copyDirTree(qpackage.getPathSourceCode(), qpackage.getPathFiles())
+    qpfolder = q.system.fs.joinPaths(qpackage.getPathFiles(), 'generic')
+    q.system.fs.removeDirTree(qpfolder)
+    filesexportDir = q.system.fs.joinPaths(q.dirs.varDir, 'src', qpackage.name, 'files')
 
-
+    q.system.fs.copyDirTree(filesexportDir, qpfolder)
