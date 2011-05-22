@@ -1,0 +1,15 @@
+[ 
+  { "branch" : "default",
+     "location" : "https://bitbucket.org/incubaid/pylabs-core/",
+     "mapping" : 
+     {  "qbase5" : "generic/",
+        "apps/applicationserver" : "generic/apps/applicationserver/",
+        "apps/cloud_api_generator" : "generic/apps/cloud_api_generator",
+        "core" : "generic/lib/pylabs/core/pylabs/",
+        "extensions" : "generic/lib/pylabs/extensions/",
+        "lib" : "generic/lib/python/site-packages",
+        "utils" : "generic/utils"
+        
+     }
+  }
+]
