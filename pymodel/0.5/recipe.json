@@ -1,0 +1,10 @@
+[ 
+  { "branch" : "pylabs5",
+     "location" : "https://bitbucket.org/despiegk/pymodel",
+     "mapping" : 
+     {  "pymodel" : "generic/lib/python/site-packages/pymodel",
+        "pymodel_extension" : "generic/lib/pylabs/extensions/pymodel_extension"
+        
+     }
+  }
+]
