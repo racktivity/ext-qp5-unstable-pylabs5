@@ -4,5 +4,5 @@ __tags__   = 'codemanagement',
 
 def main(q, i, params, tags):
     qpackage = params['qpackage']
-    qpackage.checkoutFromRecipe()
+    qpackage.checkoutRecipe()
 
