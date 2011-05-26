@@ -1,0 +1,11 @@
+[ 
+  { "branch" : "default",
+    "location" : "http://bitbucket.org/despiegk/pylabs_auto_start_stop",
+    "mapping" : 
+    {  
+      "autostart" : "unix/files",
+      "qpackage"  : "unix/tasklets"
+    }
+  }
+]
+
