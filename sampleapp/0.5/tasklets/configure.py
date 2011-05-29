@@ -2,9 +2,12 @@
 __author__ = 'aserver'
 __tags__   = 'configure',
 
-def main(q, i, params, tags):
+def main(q, i, p, params, tags):
     qpackage = params['qpackage']
     appnames = ['sampleapp']
+
+    # Install sampleapp
+    p.application.install(appnames[0])
 
     for appname in appnames:
         order = appnames.index(appname) + 1 * 10
