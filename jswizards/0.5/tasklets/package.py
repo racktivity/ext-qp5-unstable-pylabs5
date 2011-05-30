@@ -8,8 +8,10 @@ def main(q, i, params, tags):
     q.system.fs.removeDirTree(filesDir)
     q.system.fs.createDir(filesDir)
     q.system.fs.copyDirTree(qpackage.getPathSourceCode(), qpackage.getPathFiles())
-    filesexportDir = q.system.fs.joinPaths(qpackage.getPathSourceCode(), str(q.enumerators.PlatformType.GENERIC))    
+    
+    filesexportDir = q.system.fs.joinPaths(filesDir, str(q.enumerators.PlatformType.GENERIC))    
     coffeePath = q.system.fs.joinPaths(filesexportDir, 'www', 'jswizards', 'js', 'jswizards.coffee')
     q.system.fs.removeFile(coffeePath)
-    q.system.fs.copyDirTree(filesexportDir, q.system.fs.joinPaths(filesDir, "generic"))
-
+    
+    hgdirPath = q.system.fs.joinPaths(filesexportDir, 'www', 'jswizards', '.hg')
+    q.system.fs.removeDirTree(hgdirPath)
