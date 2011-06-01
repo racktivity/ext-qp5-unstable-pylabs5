@@ -11,4 +11,3 @@ def main(q, i, params, tags):
     py2_6 = q.system.fs.joinPaths(q.dirs.baseDir, 'lib', 'python2.6', 'site-packages', 'workflowengine')
     if q.system.fs.exists(py2_6): q.system.fs.removeDirTree(py2_6)
     qpackage.copyFiles()
-    qpackage.signalConfigurationNeeded()
