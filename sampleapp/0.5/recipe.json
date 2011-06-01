@@ -2,7 +2,8 @@
   {  "branch" : "default",
      "location" : "https://bitbucket.org/incubaid/pylabs-core/",
      "mapping" : 
-     {  "pyapps/sampleapp" : "generic/pyapps/sampleapp"
+     {  "pyapps/pylabsdoc/portal/spaces/PyLabs50/PyApps" : "generic/pyapps/sampleapp/portal/spaces/pyappsdoc",
+        "pyapps/pylabsdoc/static/images/images50/pyapps" : "generic/pyapps/sampleapp/portal/static/images/pyapps"
      }
   },
   { "branch" : "default",
