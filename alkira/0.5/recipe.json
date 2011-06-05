@@ -5,7 +5,7 @@
      {  "model/rootobjects/" : "generic/libexec/osis",
         "htdocs" : "generic/www/lfw",
         "services/lfw" : "generic/lib/python/site-packages/alkira",
-        "pylabsmacro" : "generic/lib/python/site-packages/alkira/pylabsmacro",
+        "pylabsmacro" : "generic/lib/python/site-packages/alkira/tasklets/pylabsmacro",
         "client" : "generic/lib/pylabs/extensions/clients/alkira"
      
      }
