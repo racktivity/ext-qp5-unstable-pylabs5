@@ -4,7 +4,8 @@
      "mapping" : 
      {  "pyapps/pylabsdoc/portal/spaces/PyLabs50/PyLabsApps" : "generic/pyapps/sampleapp/portal/spaces/PyLabsApps",
         "pyapps/pylabsdoc/portal/static/images/images50/pyapps" : "generic/pyapps/sampleapp/portal/static/images/pyapps",
-        "pyapps/sampleapp" : "generic/pyapps/sampleapp"
+        "pyapps/sampleapp" : "generic/pyapps/sampleapp",
+        "pyapps/sampleapp/impl/portal/pylabsmacro" : "generic/pyapps/sampleapp/impl/portal/pylabsmacro"
      }
   },
   { "branch" : "default",
