@@ -1,0 +1,6 @@
+h2. PyLabs Documentation
+
+This package contains the documentation for the PyLabs framework.
+It is mainly built in a 2-way perspective:
+* as a scripting platform
+* as a development platform
