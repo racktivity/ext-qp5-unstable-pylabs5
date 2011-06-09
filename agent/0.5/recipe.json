@@ -2,7 +2,7 @@
   { "branch" : "pylabs5",
      "location" : "https://bitbucket.org/despiegk/pylabs_agent/",
      "mapping" : 
-     {  "agent" : "generic/lib/pylabs/extentions/agent",
+     {  "agent" : "generic/lib/pylabs/extensions/agent",
         "agent_service" : "generic/apps/applicationserver/services/agent_service"
         
      }
