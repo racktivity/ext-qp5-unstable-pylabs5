@@ -11,7 +11,7 @@
      "location" : "http://bitbucket.org/despiegk/lfw",
      "mapping" :
      {  
-        "docs/alkiradocs" : "generic/pyapps/pylabsdoc/alkiradocs"
+        "docs/alkiradocs" : "generic/pyapps/pylabsdoc/portal/spaces/alkiradocs"
      }
   }
 ]
