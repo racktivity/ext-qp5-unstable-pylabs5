@@ -7,9 +7,14 @@ def main(q, i, params, tags):
     url = 'http://127.0.0.1/pylabsdoc/'
     q.manage.nginx.startChanges()
     vhost = q.manage.nginx.cmdb.virtualHosts['80']
+    rproxy = '/'
     if vhost:
-        vhost.addReverseProxy('/', url, '/')
-        q.manage.nginx.save()
-        q.mange.nginx.applyConfig()
+        if rproxy in vhost.reverseproxies:
+            q.logger.log('Reverse proxy already defined', level=3)
+        else:
+            q.logger.log('Add reverse proxy to nginx', level=3)
+            vhost.addReverseProxy('/', url, '/')
+            q.manage.nginx.save()
+            q.mange.nginx.applyConfig()
     else:
         q.logger.log('No virtual host 80 exists!', level=3)
