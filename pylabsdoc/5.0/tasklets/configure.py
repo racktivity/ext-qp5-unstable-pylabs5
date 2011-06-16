@@ -15,6 +15,6 @@ def main(q, i, params, tags):
             q.logger.log('Add reverse proxy to nginx', level=3)
             vhost.addReverseProxy('/', url, '/')
             q.manage.nginx.save()
-            q.mange.nginx.applyConfig()
+            q.manage.nginx.applyConfig()
     else:
         q.logger.log('No virtual host 80 exists!', level=3)
