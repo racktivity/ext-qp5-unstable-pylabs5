@@ -12,7 +12,7 @@
      "mapping" :
      {  
         "docs/alkiradocs" : "generic/pyapps/pylabsdoc/portal/spaces/alkiradocs",
-        "docs/md_images" : "generic/pyapps/pylabsdoc/portal/static/images/images50"
+        "docs/md_images" : "generic/pyapps/pylabsdoc/portal/static/images/images50/md_images"
      }
   }
 ]
