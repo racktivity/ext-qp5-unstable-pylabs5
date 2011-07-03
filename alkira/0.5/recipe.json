@@ -6,7 +6,8 @@
         "htdocs" : "generic/www/lfw",
         "services/lfw" : "generic/lib/python/site-packages/alkira",
         "pylabsmacro" : "generic/lib/python/site-packages/alkira/tasklets/pylabsmacro",
-        "client" : "generic/lib/pylabs/extensions/clients/alkira"
+        "client" : "generic/lib/pylabs/extensions/clients/alkira",
+        "pyapp" : "generic/lib/pylabs/extensions/api_generator/defaults"
      
      }
   }
