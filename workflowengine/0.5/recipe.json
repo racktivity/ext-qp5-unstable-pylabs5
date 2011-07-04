@@ -6,7 +6,7 @@
         "workflowengine/manage" : "linux/lib/pylabs/extensions/workflowengine/manage",
         "workflowengine/bin" : "linux/apps/workflowengine/bin",
         "workflowengine/debug_service" : "linux/apps/applicationserver/services/wfe_debug",
-        "pyapp" : "generic/lib/pylabs/extensions/api_generator/defaults"
+        "workflowengine/pyapp" : "generic/lib/pylabs/extensions/api_generator/defaults"
      }
   }
 ]
