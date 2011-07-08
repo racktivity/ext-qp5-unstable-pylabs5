@@ -13,7 +13,7 @@
      {  
         "docs/alkiradocs" : "generic/pyapps/pylabsdoc/portal/spaces/alkiradocs",
         "docs/md_images" : "generic/pyapps/pylabsdoc/portal/static/images/images50/md_images",
-	"services/widget_service/tasklets/generic" : "/opt/qbase5/lib/python/site-packages/alkira/tasklets/pylabsmacro/generic"
+	"services/widget_service/tasklets/generic" : "generic/pyapps/pylabsdoc/impl/portal/pylabsmacro/generic"
      }
   }
 ]
