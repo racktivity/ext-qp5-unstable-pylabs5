@@ -13,7 +13,8 @@
      {  
         "docs/alkiradocs" : "generic/pyapps/pylabsdoc/portal/spaces/alkiradocs",
         "docs/md_images" : "generic/pyapps/pylabsdoc/portal/static/images/images50/md_images",
-	"services/widget_service/tasklets/generic" : "generic/pyapps/pylabsdoc/impl/portal/pylabsmacro/generic"
+	"services/widget_service/tasklets/generic" : "generic/pyapps/pylabsdoc/impl/portal/pylabsmacro/generic",
+	"services/widget_service/tasklets/actions" : "generic/pyapps/pylabsdoc/impl/portal/pylabsmacro/actions"
      }
   }
 ]
