@@ -1,5 +1,5 @@
 [ 
-  { "branch" : "default",
+  { "branch" : "0.5",
      "location" : "http://bitbucket.org/despiegk/lfw",
      "mapping" : 
      {  "model/rootobjects/" : "generic/libexec/osis",
