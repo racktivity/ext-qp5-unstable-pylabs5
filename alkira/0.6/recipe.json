@@ -1,0 +1,15 @@
+[
+  { "branch" : "default",
+     "location" : "http://bitbucket.org/despiegk/lfw",
+     "mapping" :
+     {  "model/rootobjects/" : "generic/libexec/osis",
+        "htdocs" : "generic/www/lfw",
+        "services/lfw" : "generic/lib/python/site-packages/alkira",
+        "pylabsmacro" : "generic/lib/python/site-packages/alkira/tasklets/pylabsmacro",
+        "client" : "generic/lib/pylabs/extensions/clients/alkira",
+        "pyapp" : "generic/lib/pylabs/extensions/api_generator/defaults",
+        "services/oauth_service/lib/oauth2" : "generic/lib/python/site-packages/oauth2",
+        "services/oauth_service/lib/httplib2" : "generic/lib/python/site-packages/httplib2"
+     }
+  }
+]
