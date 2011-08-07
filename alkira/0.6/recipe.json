@@ -2,7 +2,7 @@
   { "branch" : "default",
      "location" : "http://bitbucket.org/despiegk/lfw",
      "mapping" :
-     {  "model/rootobjects/" : "generic/libexec/osis",
+     {
         "htdocs" : "generic/www/lfw",
         "services/lfw" : "generic/lib/python/site-packages/alkira",
         "pylabsmacro" : "generic/lib/python/site-packages/alkira/tasklets/pylabsmacro",
