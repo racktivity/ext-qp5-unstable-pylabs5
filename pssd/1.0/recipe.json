@@ -1,6 +1,9 @@
 [
   { "branch" : "default",
      "location" : "http://bitbucket.org/Krisdepeuter/private_storage_cloud",
-     "mapping" : {}
+     "mapping" : 
+       {
+         "swift_security_delegate": "generic/swift_security_delegate"
+       }
   }
 ]
