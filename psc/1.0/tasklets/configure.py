@@ -3,12 +3,25 @@ __tags__   = 'configure',
 
 import os
 
+# TODO - MNour: Change when SAL(s) are implemented
+def _stop_swift():
+    try:
+        q.system.process.run('swift-init all stop')
+    except SystemExit as sys_exit_excp:
+        if sys_exit_excp.code != 44:
+            raise
+
+# TODO - MNour: Change when SAL(s) are implemented
+def _start_swift():
+    q.system.process.run('swift-init all start')
+
 def main(q, i, params, tags):
     qpackage = params['qpackage']
     proxy_server_conf_path = q.system.fs.joinPaths(os.path.sep, 'etc', 'swift', 'proxy-server.conf')
     pipeline_main_section_name = 'pipeline:main'
     pipeline_key_name = 'pipeline'
 
+    _stop_swift()
     if not q.system.fs.exists(proxy_server_conf_path):
         raise Exception('Can not find file: %s' % proxy_server_conf_path)
 
@@ -31,4 +44,5 @@ def main(q, i, params, tags):
 
     proxy_server_conf.setParam(pipeline_main_section_name, pipeline_key_name, pipeline_value)
     proxy_server_conf.write()
+    _start_swift()
 
