@@ -4,7 +4,7 @@ __tags__   = 'configure',
 import os
 
 # TODO - MNour: Change when SAL(s) are implemented
-def _stop_swift():
+def _stop_swift(q):
     try:
         q.system.process.run('swift-init all stop')
     except SystemExit as sys_exit_excp:
@@ -12,7 +12,7 @@ def _stop_swift():
             raise
 
 # TODO - MNour: Change when SAL(s) are implemented
-def _start_swift():
+def _start_swift(q):
     q.system.process.run('swift-init all start')
 
 def main(q, i, params, tags):
