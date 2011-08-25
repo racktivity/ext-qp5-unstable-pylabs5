@@ -2,8 +2,8 @@
   { "branch" : "default",
      "location" : "http://bitbucket.org/Krisdepeuter/private_storage_cloud",
      "mapping" : 
-       {
-         "swift_security_delegate/tasklets": "generic/apps/pssd/tasklets"
-       }
+     {
+       "swift_security_delegate/tasklets": "generic/apps/pssd/tasklets"
+     }
   }
 ]
