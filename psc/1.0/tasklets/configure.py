@@ -21,7 +21,7 @@ def main(q, i, params, tags):
     pipeline_main_section_name = 'pipeline:main'
     pipeline_key_name = 'pipeline'
 
-    _stop_swift()
+    _stop_swift(q)
     if not q.system.fs.exists(proxy_server_conf_path):
         raise Exception('Can not find file: %s' % proxy_server_conf_path)
 
@@ -43,6 +43,8 @@ def main(q, i, params, tags):
         pipeline_value = '%s pssd %s' % (splits[0].strip(), splits[-1].strip())
 
     proxy_server_conf.setParam(pipeline_main_section_name, pipeline_key_name, pipeline_value)
+    proxy_server_conf.addSection('filter:pssd')
+    proxy_server_conf.addParam('filter:pssd', 'use', 'egg:pssd#pssd')
     proxy_server_conf.write()
-    _start_swift()
+    _start_swift(q)
 
