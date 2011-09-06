@@ -1,3 +1,0 @@
-h2. pylabs5 pssd 1.0
-
-Installing PyLabs Security Service Delegate for OpenStack Object Storage (a.k.a Swift)
