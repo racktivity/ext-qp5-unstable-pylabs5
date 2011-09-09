@@ -1,0 +1,4 @@
+h2. pylabs5 pssd_wsgi 1.0
+
+PyLabs Security Service Delegate as WSGI Middleware.
+
