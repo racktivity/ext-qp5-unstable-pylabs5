@@ -1,0 +1,9 @@
+[
+  { "branch" : "default",
+    "location" : "https://bitbucket.org/incubaid/pylabs-core/",
+    "mapping" :
+      {
+        "pyapps/dcsimulator" : "generic/pyapps/dcsimulator"
+      }
+  }
+]
