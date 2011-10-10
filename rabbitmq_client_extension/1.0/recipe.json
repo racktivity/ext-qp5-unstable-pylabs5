@@ -1,0 +1,10 @@
+[ 
+  { "branch" : "default",
+    "location" : "http://bitbucket.org/incubaid/rabbitmq_extension",
+    "mapping" : 
+    {  
+      "rabbitmq_client" : "generic/lib/pylabs/extensions/baseworking/rabbitmq",
+      "rabbitmq_config" : "generic/lib/pylabs/extensions/interactive/rabbitmq"
+    }
+  }
+]

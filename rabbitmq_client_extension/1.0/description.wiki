@@ -1,0 +1,3 @@
+h2. pylabs5 rabbitmq_client_extension 1.0
+
+...
