@@ -25,7 +25,7 @@ def main(q, i, params, tags):
     #unused = raw_input("package: 3")
 
     # copy extension files
-    srcFiles = ['__init__.py', 'Archiver.py', 'enums.py', 'extension.cfg', 'filePatch.py', 'FileProperties.py', 'PFile.py', 'PFilter.py', 'PFind.py', 'PListFactory.py', 'PList.py', 'fsbridge.py']
+    srcFiles = ['__init__.py', 'Archiver.py', 'enums.py', 'extension.cfg', 'filePatch.py', 'FileProperties.py', 'fsbridge.py', 'PFile.py', 'PFilter.py', 'PFind.py', 'PListFactory.py', 'PList.py']
     for srcFile in srcFiles:
         q.system.fs.copyFile(q.system.fs.joinPaths(srcDir, srcFile), 
                              q.system.fs.joinPaths(dstDir, srcFile))
