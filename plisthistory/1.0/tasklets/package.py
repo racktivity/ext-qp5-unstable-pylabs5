@@ -15,7 +15,7 @@ def main(q, i, params, tags):
     q.system.fs.createDir(dstDir)
 
     # copy extension files
-    srcFiles = ['extension.cfg', '__init__.py', 'PListView.py', 'PListHistory.py']
+    srcFiles = ['authx.py', 'extension.cfg', '__init__.py', 'PListView.py', 'PListHistory.py', 'plock.py']
     for srcFile in srcFiles:
         q.system.fs.copyFile(q.system.fs.joinPaths(srcDir, srcFile), 
                              q.system.fs.joinPaths(dstDir, srcFile))
