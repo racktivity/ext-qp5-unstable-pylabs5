@@ -15,7 +15,7 @@ def main(q, i, params, tags):
     q.system.fs.createDir(dstDir)
 
     # copy extension files
-    srcFiles = ['__init__.py', 'gd.py', 'GDocsSync.py', 'GDocsSyncFactory.py', 'extension.cfg']
+    srcFiles = ['__init__.py', 'gd.py', 'GDocsSync.py', 'GDocsSyncFactory.py', 'extension.cfg', 'GFolder.py']
     for srcFile in srcFiles:
         q.system.fs.copyFile(q.system.fs.joinPaths(srcDir, srcFile), 
                              q.system.fs.joinPaths(dstDir, srcFile))
