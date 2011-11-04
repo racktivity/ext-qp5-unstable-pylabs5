@@ -21,7 +21,7 @@ def main(q, i, params, tags):
     
         #unused = raw_input("install: 2")
     
-        srcFiles = ['__init__.py', 'Archiver.py', 'enums.py', 'extension.cfg', 'filePatch.py', 'FileProperties.py', 'PFile.py', 'PFilter.py', 'PFind.py', 'PListFactory.py', 'PList.py']
+        srcFiles = ['__init__.py', 'Archiver.py', 'enums.py', 'extension.cfg', 'filePatch.py', 'FileProperties.py', 'fsbridge.py', 'PFile.py', 'PFilter.py', 'PFind.py', 'PListFactory.py', 'PList.py']
         for srcFile in srcFiles:
             q.system.fs.copyFile(q.system.fs.joinPaths(srcDir, srcFile), 
                                     q.system.fs.joinPaths(dstDir, srcFile))
