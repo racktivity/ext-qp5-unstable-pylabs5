@@ -15,7 +15,7 @@ def main(q, i, params, tags):
     q.system.fs.createDir(dstDir)
 
     # copy extension files
-    srcFiles = ['extension.cfg', '__init__.py', 'MultipartPostHandler.py', 'PSyncFactory.py', 'PSyncUtils.py']
+    srcFiles = ['extension.cfg', '__init__.py', 'MultipartPostHandler.py', 'NamespaceAccess.py', 'NamespaceUtils.py', 'PConfUtils.py', 'PSCManager.py', 'PSyncFactory.py', 'PSyncUtils.py', 'PyappUtils.py', 'Statistics.py', 'synclock.py']
     for srcFile in srcFiles:
         q.system.fs.copyFile(q.system.fs.joinPaths(srcDir, srcFile), 
                              q.system.fs.joinPaths(dstDir, srcFile))
