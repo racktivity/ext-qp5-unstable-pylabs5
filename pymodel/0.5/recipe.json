@@ -1,5 +1,5 @@
 [ 
-  { "branch" : "pylabs5",
+  { "branch" : "5.0",
      "location" : "https://bitbucket.org/despiegk/pymodel",
      "mapping" : 
      {  "pymodel" : "generic/lib/python/site-packages/pymodel",
