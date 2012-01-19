@@ -1,7 +1,6 @@
 h1.  Content of this repository
-This file describes the content and structure of this repository.
 
 h2.  Main content
-
+This repository is a lecacy of the qpackage 5.0 system.  It is only used for testing purposes.
 
 h2. Structure
