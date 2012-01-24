@@ -1,5 +1,5 @@
 [ 
-  { "branch" : "5.0",
+  { "branch" : "pylabs5",
      "location" : "http://bitbucket.org/despiegk/pylabs_workflowengine",
      "mapping" : 
      {  "workflowengine/lib" : "linux/lib/python/site-packages/workflowengine",
