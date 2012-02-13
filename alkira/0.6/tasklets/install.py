@@ -9,13 +9,15 @@ def main(q, i, params, tags):
             destination = q.system.fs.joinPaths(q.system.fs.getParent(parentdir), pagename)
             q.system.fs.moveFile(parentpage, destination)
 
-        subdirs = q.system.fs.listDirsInDir(parentdir)
+        subdirs = q.system.fs.listDirsInDir(parentdir.decode('utf-8'))
         for subdir in subdirs:
             ensureDecentStructure(subdir)
 
     def changeSpacefileNames(pyappdir):
         spacedirpath = q.system.fs.joinPaths(pyappdir, 'portal', 'spaces')
         spacefilespath = q.system.fs.joinPaths(spacedirpath, 'Admin', 'Home', 'Spaces')
+        if not q.system.fs.exists(spacedirpath):
+            return
         spacedirlist = q.system.fs.listDirsInDir(spacedirpath)
         for fullDirname in spacedirlist:
             dirname = q.system.fs.getBaseName(fullDirname)
@@ -28,7 +30,10 @@ def main(q, i, params, tags):
     pyapps = q.system.fs.listDirsInDir(q.dirs.pyAppsDir)
     for pyapp in pyapps:
         changeSpacefileNames(pyapp)
-        spaces = q.system.fs.listDirsInDir(q.system.fs.joinPaths(pyapp, "portal", "spaces"))
+        spacedir = q.system.fs.joinPaths(pyapp, "portal", "spaces")
+        if not q.system.fs.exists(spacedir):
+            continue
+        spaces = q.system.fs.listDirsInDir(spacedir)
         for space in spaces:
             ensureDecentStructure(space)
 
