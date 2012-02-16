@@ -13,6 +13,9 @@ def main(q, i, params, tags):
     q.system.fs.removeDirTree(filesDir)
     q.system.fs.createDir(filesDir)
     q.logger.log('Packaging Osis', 1)
+
+
+
     
     egg_dir = q.system.fs.joinPaths(filesDir, 'generic', 'osis_egg')
 
@@ -26,6 +29,6 @@ def main(q, i, params, tags):
     q.system.fs.createDir(egg_dir)
     q.qpackagetools.createEggZipFromSandboxDir(eggfolder, egg_name)
 
-    relativePath = q.system.fs.joinPaths('generic', 'lib', 'pylabs', 'extensions', 'osis_connection')
+    relativePath = q.system.fs.joinPaths('generic', 'lib', 'pylabs', 'extensions')
     q.system.fs.copyDirTree(q.system.fs.joinPaths(qpackage.getPathSourceCode(), relativePath), q.system.fs.joinPaths(filesDir, relativePath))
 
