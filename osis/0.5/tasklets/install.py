@@ -1,5 +1,3 @@
-import sys
-
 __author__ = 'incubaid'
 __tags__ = 'install',
 __priority__ = 1
@@ -19,4 +17,4 @@ def main(q, i, params, tags):
 
     q.qpackagetools.copyEggToSandbox(src_egg, target_egg)
 
-    q.system.fs.copyDirTree(q.system.fs.joinPaths(qpackage.getPathFiles(), 'generic', 'lib'), q.system.fs.joinPaths(q.dirs.baseDir, 'lib'))
+    q.system.fs.copyDirTree(q.system.fs.joinPaths(qpackage.getPathFiles(), 'generic', 'lib'), q.system.fs.joinPaths(q.dirs.baseDir, 'lib'), update=True)
