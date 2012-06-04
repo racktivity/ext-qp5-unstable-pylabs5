@@ -1,7 +1,7 @@
-[ 
+[
   { "branch" : "0.5",
-     "location" : "http://bitbucket.org/despiegk/osis",
-     "mapping" : 
+     "location" : "http://bitbucket.org/racktivity/ext-osis",
+     "mapping" :
      {  "code/osis" : "generic/lib/python/site-packages/osis",
         "pyapp" : "generic/lib/pylabs/extensions/api_generator/defaults",
         "osis_connection_config" : "generic/lib/pylabs/extensions/osis_connection"

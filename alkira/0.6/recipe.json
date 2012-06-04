@@ -1,6 +1,6 @@
 [
   { "branch" : "default",
-     "location" : "http://bitbucket.org/despiegk/lfw",
+     "location" : "http://bitbucket.org/racktivity/ext-lfw",
      "mapping" :
      {
         "htdocs" : "generic/www/lfw",

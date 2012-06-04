@@ -1,8 +1,8 @@
-[ 
+[
   { "branch" : "coffee",
-    "location" : "http://bitbucket.org/despiegk/jswizards",
-    "mapping" : 
-    {  
+    "location" : "http://bitbucket.org/racktivity/ext-jswizards",
+    "mapping" :
+    {
       "" : "generic/www/jswizards"
     }
   }
