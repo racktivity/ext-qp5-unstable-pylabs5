@@ -1,6 +1,6 @@
 [
   { "branch" : "pylabs5",
-     "location" : "https://bitbucket.org/racktivity/ext-pylabs_agent/",
+     "location" : "http://bitbucket.org/racktivity/ext-pylabs_agent/",
      "mapping" :
      {  "agent" : "generic/lib/pylabs/extensions/agent",
         "agent_service" : "generic/apps/applicationserver/services/agent_service"
