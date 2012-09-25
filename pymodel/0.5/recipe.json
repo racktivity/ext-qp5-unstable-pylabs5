@@ -1,10 +1,10 @@
-[ 
+[
   { "branch" : "5.0",
-     "location" : "https://bitbucket.org/despiegk/pymodel",
-     "mapping" : 
+     "location" : "https://bitbucket.org/racktivity/ext-pymodel",
+     "mapping" :
      {  "pymodel" : "generic/lib/python/site-packages/pymodel",
         "pymodel_extension" : "generic/lib/pylabs/extensions/pymodel_extension"
-        
+
      }
   }
 ]
